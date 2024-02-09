@@ -9,18 +9,30 @@
 /* Begin PBXBuildFile section */
 		C51AD4D72B755B6500044E4F /* Compass_CompanionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51AD4D62B755B6500044E4F /* Compass_CompanionApp.swift */; };
 		C51AD4D92B755B6500044E4F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51AD4D82B755B6500044E4F /* ContentView.swift */; };
-		C51AD4DB2B755B6500044E4F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51AD4DA2B755B6500044E4F /* Item.swift */; };
+		C51AD4DB2B755B6500044E4F /* LogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51AD4DA2B755B6500044E4F /* LogEntry.swift */; };
 		C51AD4DD2B755B6700044E4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C51AD4DC2B755B6700044E4F /* Assets.xcassets */; };
 		C51AD4E02B755B6700044E4F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C51AD4DF2B755B6700044E4F /* Preview Assets.xcassets */; };
+		C51AD4E72B755F2800044E4F /* DogActivities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51AD4E62B755F2800044E4F /* DogActivities.swift */; };
+		C51AD4EA2B75604400044E4F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51AD4E92B75604400044E4F /* HomeView.swift */; };
+		C51AD4EC2B75640900044E4F /* EntriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51AD4EB2B75640900044E4F /* EntriesList.swift */; };
+		C51AD4EE2B75649B00044E4F /* CCDestinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51AD4ED2B75649B00044E4F /* CCDestinations.swift */; };
+		C51AD4F02B75660C00044E4F /* EntryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51AD4EF2B75660C00044E4F /* EntryDetails.swift */; };
+		C51AD4F42B75691800044E4F /* AddEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51AD4F32B75691800044E4F /* AddEntry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C51AD4D32B755B6500044E4F /* Compass Companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Compass Companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C51AD4D62B755B6500044E4F /* Compass_CompanionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compass_CompanionApp.swift; sourceTree = "<group>"; };
 		C51AD4D82B755B6500044E4F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		C51AD4DA2B755B6500044E4F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		C51AD4DA2B755B6500044E4F /* LogEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEntry.swift; sourceTree = "<group>"; };
 		C51AD4DC2B755B6700044E4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C51AD4DF2B755B6700044E4F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C51AD4E62B755F2800044E4F /* DogActivities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogActivities.swift; sourceTree = "<group>"; };
+		C51AD4E92B75604400044E4F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C51AD4EB2B75640900044E4F /* EntriesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesList.swift; sourceTree = "<group>"; };
+		C51AD4ED2B75649B00044E4F /* CCDestinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCDestinations.swift; sourceTree = "<group>"; };
+		C51AD4EF2B75660C00044E4F /* EntryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetails.swift; sourceTree = "<group>"; };
+		C51AD4F32B75691800044E4F /* AddEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEntry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +66,12 @@
 			isa = PBXGroup;
 			children = (
 				C51AD4D62B755B6500044E4F /* Compass_CompanionApp.swift */,
-				C51AD4D82B755B6500044E4F /* ContentView.swift */,
-				C51AD4DA2B755B6500044E4F /* Item.swift */,
+				C51AD4E82B75603600044E4F /* Views */,
+				C51AD4DA2B755B6500044E4F /* LogEntry.swift */,
 				C51AD4DC2B755B6700044E4F /* Assets.xcassets */,
 				C51AD4DE2B755B6700044E4F /* Preview Content */,
+				C51AD4E62B755F2800044E4F /* DogActivities.swift */,
+				C51AD4ED2B75649B00044E4F /* CCDestinations.swift */,
 			);
 			path = "Compass Companion";
 			sourceTree = "<group>";
@@ -68,6 +82,18 @@
 				C51AD4DF2B755B6700044E4F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C51AD4E82B75603600044E4F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C51AD4D82B755B6500044E4F /* ContentView.swift */,
+				C51AD4E92B75604400044E4F /* HomeView.swift */,
+				C51AD4EB2B75640900044E4F /* EntriesList.swift */,
+				C51AD4EF2B75660C00044E4F /* EntryDetails.swift */,
+				C51AD4F32B75691800044E4F /* AddEntry.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +166,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C51AD4F42B75691800044E4F /* AddEntry.swift in Sources */,
 				C51AD4D92B755B6500044E4F /* ContentView.swift in Sources */,
-				C51AD4DB2B755B6500044E4F /* Item.swift in Sources */,
+				C51AD4E72B755F2800044E4F /* DogActivities.swift in Sources */,
+				C51AD4DB2B755B6500044E4F /* LogEntry.swift in Sources */,
+				C51AD4EA2B75604400044E4F /* HomeView.swift in Sources */,
+				C51AD4EC2B75640900044E4F /* EntriesList.swift in Sources */,
+				C51AD4F02B75660C00044E4F /* EntryDetails.swift in Sources */,
 				C51AD4D72B755B6500044E4F /* Compass_CompanionApp.swift in Sources */,
+				C51AD4EE2B75649B00044E4F /* CCDestinations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
