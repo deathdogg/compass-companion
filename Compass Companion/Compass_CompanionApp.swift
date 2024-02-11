@@ -26,6 +26,7 @@ struct Compass_CompanionApp: App {
 	var body: some Scene {
 		WindowGroup {
 			ContentView()
+				.defaultAppStorage(UserDefaults(suiteName: "group.compass-companion")!)
 		}
 		.modelContainer(sharedModelContainer)
 	}

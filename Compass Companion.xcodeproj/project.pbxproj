@@ -18,7 +18,37 @@
 		C51AD4EE2B75649B00044E4F /* CCDestinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51AD4ED2B75649B00044E4F /* CCDestinations.swift */; };
 		C51AD4F02B75660C00044E4F /* EntryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51AD4EF2B75660C00044E4F /* EntryDetails.swift */; };
 		C51AD4F42B75691800044E4F /* AddEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51AD4F32B75691800044E4F /* AddEntry.swift */; };
+		C59C81262B78568E00F8CEB5 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C59C81252B78568E00F8CEB5 /* WidgetKit.framework */; };
+		C59C81282B78568E00F8CEB5 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C59C81272B78568E00F8CEB5 /* SwiftUI.framework */; };
+		C59C812B2B78568E00F8CEB5 /* CCWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59C812A2B78568E00F8CEB5 /* CCWidgetBundle.swift */; };
+		C59C812D2B78568E00F8CEB5 /* CCWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59C812C2B78568E00F8CEB5 /* CCWidget.swift */; };
+		C59C812F2B78568F00F8CEB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C59C812E2B78568F00F8CEB5 /* Assets.xcassets */; };
+		C59C81332B78568F00F8CEB5 /* CCWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C59C81232B78568E00F8CEB5 /* CCWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C59C81312B78568F00F8CEB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C51AD4CB2B755B6500044E4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C59C81222B78568E00F8CEB5;
+			remoteInfo = CCWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C59C81342B78568F00F8CEB5 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C59C81332B78568F00F8CEB5 /* CCWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C51AD4D32B755B6500044E4F /* Compass Companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Compass Companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,6 +63,15 @@
 		C51AD4ED2B75649B00044E4F /* CCDestinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCDestinations.swift; sourceTree = "<group>"; };
 		C51AD4EF2B75660C00044E4F /* EntryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetails.swift; sourceTree = "<group>"; };
 		C51AD4F32B75691800044E4F /* AddEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEntry.swift; sourceTree = "<group>"; };
+		C59C81232B78568E00F8CEB5 /* CCWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CCWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C59C81252B78568E00F8CEB5 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		C59C81272B78568E00F8CEB5 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		C59C812A2B78568E00F8CEB5 /* CCWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCWidgetBundle.swift; sourceTree = "<group>"; };
+		C59C812C2B78568E00F8CEB5 /* CCWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCWidget.swift; sourceTree = "<group>"; };
+		C59C812E2B78568F00F8CEB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C59C81302B78568F00F8CEB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C59C81382B7864FA00F8CEB5 /* Compass Companion.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Compass Companion.entitlements"; sourceTree = "<group>"; };
+		C59C81392B78652700F8CEB5 /* CCWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CCWidgetExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,13 +82,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C59C81202B78568E00F8CEB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C59C81282B78568E00F8CEB5 /* SwiftUI.framework in Frameworks */,
+				C59C81262B78568E00F8CEB5 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		C51AD4CA2B755B6500044E4F = {
 			isa = PBXGroup;
 			children = (
+				C59C81392B78652700F8CEB5 /* CCWidgetExtension.entitlements */,
 				C51AD4D52B755B6500044E4F /* Compass Companion */,
+				C59C81292B78568E00F8CEB5 /* CCWidget */,
+				C59C81242B78568E00F8CEB5 /* Frameworks */,
 				C51AD4D42B755B6500044E4F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				C51AD4D32B755B6500044E4F /* Compass Companion.app */,
+				C59C81232B78568E00F8CEB5 /* CCWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +117,7 @@
 		C51AD4D52B755B6500044E4F /* Compass Companion */ = {
 			isa = PBXGroup;
 			children = (
+				C59C81382B7864FA00F8CEB5 /* Compass Companion.entitlements */,
 				C51AD4D62B755B6500044E4F /* Compass_CompanionApp.swift */,
 				C51AD4E82B75603600044E4F /* Views */,
 				C51AD4DA2B755B6500044E4F /* LogEntry.swift */,
@@ -96,6 +149,26 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		C59C81242B78568E00F8CEB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C59C81252B78568E00F8CEB5 /* WidgetKit.framework */,
+				C59C81272B78568E00F8CEB5 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C59C81292B78568E00F8CEB5 /* CCWidget */ = {
+			isa = PBXGroup;
+			children = (
+				C59C812A2B78568E00F8CEB5 /* CCWidgetBundle.swift */,
+				C59C812C2B78568E00F8CEB5 /* CCWidget.swift */,
+				C59C812E2B78568F00F8CEB5 /* Assets.xcassets */,
+				C59C81302B78568F00F8CEB5 /* Info.plist */,
+			);
+			path = CCWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,15 +179,34 @@
 				C51AD4CF2B755B6500044E4F /* Sources */,
 				C51AD4D02B755B6500044E4F /* Frameworks */,
 				C51AD4D12B755B6500044E4F /* Resources */,
+				C59C81342B78568F00F8CEB5 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C59C81322B78568F00F8CEB5 /* PBXTargetDependency */,
 			);
 			name = "Compass Companion";
 			productName = "Compass Companion";
 			productReference = C51AD4D32B755B6500044E4F /* Compass Companion.app */;
 			productType = "com.apple.product-type.application";
+		};
+		C59C81222B78568E00F8CEB5 /* CCWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C59C81372B78568F00F8CEB5 /* Build configuration list for PBXNativeTarget "CCWidgetExtension" */;
+			buildPhases = (
+				C59C811F2B78568E00F8CEB5 /* Sources */,
+				C59C81202B78568E00F8CEB5 /* Frameworks */,
+				C59C81212B78568E00F8CEB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CCWidgetExtension;
+			productName = CCWidgetExtension;
+			productReference = C59C81232B78568E00F8CEB5 /* CCWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -127,6 +219,9 @@
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					C51AD4D22B755B6500044E4F = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					C59C81222B78568E00F8CEB5 = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
@@ -145,6 +240,7 @@
 			projectRoot = "";
 			targets = (
 				C51AD4D22B755B6500044E4F /* Compass Companion */,
+				C59C81222B78568E00F8CEB5 /* CCWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -156,6 +252,14 @@
 			files = (
 				C51AD4E02B755B6700044E4F /* Preview Assets.xcassets in Resources */,
 				C51AD4DD2B755B6700044E4F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C59C81212B78568E00F8CEB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C59C812F2B78568F00F8CEB5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,7 +282,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C59C811F2B78568E00F8CEB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C59C812B2B78568E00F8CEB5 /* CCWidgetBundle.swift in Sources */,
+				C59C812D2B78568E00F8CEB5 /* CCWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C59C81322B78568F00F8CEB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C59C81222B78568E00F8CEB5 /* CCWidgetExtension */;
+			targetProxy = C59C81312B78568F00F8CEB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C51AD4E12B755B6700044E4F /* Debug */ = {
@@ -303,8 +424,10 @@
 		C51AD4E42B755B6700044E4F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Compass Companion/Compass Companion.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Compass Companion/Preview Content\"";
@@ -332,8 +455,10 @@
 		C51AD4E52B755B6700044E4F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Compass Companion/Compass Companion.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Compass Companion/Preview Content\"";
@@ -358,6 +483,62 @@
 			};
 			name = Release;
 		};
+		C59C81352B78568F00F8CEB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = CCWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 47W8CAGQ86;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CCWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CCWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "RHR.Compass-Companion.CCWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C59C81362B78568F00F8CEB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = CCWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 47W8CAGQ86;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CCWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CCWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "RHR.Compass-Companion.CCWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -375,6 +556,15 @@
 			buildConfigurations = (
 				C51AD4E42B755B6700044E4F /* Debug */,
 				C51AD4E52B755B6700044E4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C59C81372B78568F00F8CEB5 /* Build configuration list for PBXNativeTarget "CCWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C59C81352B78568F00F8CEB5 /* Debug */,
+				C59C81362B78568F00F8CEB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
