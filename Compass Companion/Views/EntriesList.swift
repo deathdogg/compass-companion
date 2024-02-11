@@ -9,6 +9,7 @@ import SwiftUI
 import SwiftData
 struct EntriesList: View {
 	@State private var path = NavigationPath()
+	@Environment(\.modelContext) private var moc
 	@Query(sort: \LogEntry.date) private var entries: [LogEntry]
 	var body: some View {
 		NavigationStack(path: $path) {
@@ -22,6 +23,9 @@ struct EntriesList: View {
 					.accessibilityActions {
 						Button("Edit") {
 							path.append(CCDestinations.edit(entry))
+						}
+						Button("Delete") {
+							moc.delete(entry)
 						}
 					}
 					.onLongPressGesture {
