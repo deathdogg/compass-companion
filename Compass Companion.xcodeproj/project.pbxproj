@@ -24,6 +24,8 @@
 		C59C812D2B78568E00F8CEB5 /* CCWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59C812C2B78568E00F8CEB5 /* CCWidget.swift */; };
 		C59C812F2B78568F00F8CEB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C59C812E2B78568F00F8CEB5 /* Assets.xcassets */; };
 		C59C81332B78568F00F8CEB5 /* CCWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C59C81232B78568E00F8CEB5 /* CCWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C59C813A2B78807800F8CEB5 /* LogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51AD4DA2B755B6500044E4F /* LogEntry.swift */; };
+		C59C813B2B7885BB00F8CEB5 /* DogActivities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51AD4E62B755F2800044E4F /* DogActivities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -287,7 +289,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C59C812B2B78568E00F8CEB5 /* CCWidgetBundle.swift in Sources */,
+				C59C813B2B7885BB00F8CEB5 /* DogActivities.swift in Sources */,
 				C59C812D2B78568E00F8CEB5 /* CCWidget.swift in Sources */,
+				C59C813A2B78807800F8CEB5 /* LogEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
