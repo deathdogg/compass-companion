@@ -15,6 +15,8 @@ struct ContentView: View {
 				.tabItem { Text("Home") }
 			EntriesList()
 				.tabItem { Text("All Entries") }
+			SettingsView()
+				.tabItem { Text("Settings") }
 		}
 	}
 

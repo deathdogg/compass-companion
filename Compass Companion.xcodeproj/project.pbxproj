@@ -26,6 +26,7 @@
 		C59C81332B78568F00F8CEB5 /* CCWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C59C81232B78568E00F8CEB5 /* CCWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C59C813A2B78807800F8CEB5 /* LogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51AD4DA2B755B6500044E4F /* LogEntry.swift */; };
 		C59C813B2B7885BB00F8CEB5 /* DogActivities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51AD4E62B755F2800044E4F /* DogActivities.swift */; };
+		C59C813D2B7889F900F8CEB5 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59C813C2B7889F900F8CEB5 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		C59C81302B78568F00F8CEB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C59C81382B7864FA00F8CEB5 /* Compass Companion.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Compass Companion.entitlements"; sourceTree = "<group>"; };
 		C59C81392B78652700F8CEB5 /* CCWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CCWidgetExtension.entitlements; sourceTree = "<group>"; };
+		C59C813C2B7889F900F8CEB5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 				C51AD4EB2B75640900044E4F /* EntriesList.swift */,
 				C51AD4EF2B75660C00044E4F /* EntryDetails.swift */,
 				C51AD4F32B75691800044E4F /* AddEntry.swift */,
+				C59C813C2B7889F900F8CEB5 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				C51AD4E72B755F2800044E4F /* DogActivities.swift in Sources */,
 				C51AD4DB2B755B6500044E4F /* LogEntry.swift in Sources */,
 				C51AD4EA2B75604400044E4F /* HomeView.swift in Sources */,
+				C59C813D2B7889F900F8CEB5 /* SettingsView.swift in Sources */,
 				C51AD4EC2B75640900044E4F /* EntriesList.swift in Sources */,
 				C51AD4F02B75660C00044E4F /* EntryDetails.swift in Sources */,
 				C51AD4D72B755B6500044E4F /* Compass_CompanionApp.swift in Sources */,

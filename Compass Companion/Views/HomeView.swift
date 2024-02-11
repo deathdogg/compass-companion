@@ -8,8 +8,6 @@ import WidgetKit
 import SwiftUI
 import SwiftData
 struct HomeView: View {
-	@AppStorage("lastActivity") private var lastActivity: String?
-	@AppStorage("lastActivityDate") private var lastActivityDate: TimeInterval?
 	@Query(sort: \LogEntry.date) var entries: [LogEntry]
 	@State private var path = NavigationPath()
 	var body: some View {
@@ -17,15 +15,9 @@ struct HomeView: View {
 			VStack(alignment: .center, spacing: 10) {
 				if !entries.isEmpty {
 					let lastEntry = entries.last!
-					let date = lastEntry.date.timeIntervalSince1970
-					let activity = lastEntry.activity.rawValue
-					let newEntry = "\(activity) on \(Date(timeIntervalSince1970: date))"
 					Section("Last activity") {
 						Text (lastEntry.activity.rawValue)
-						Text(lastActivity ?? "Failed to show activity")
 							.onAppear {
-								self.lastActivity = newEntry
-								self.lastActivityDate = date
 								WidgetCenter.shared.reloadTimelines(ofKind: "CCWidget")
 							}
 						Text("Date: \(lastEntry.date.formatted())")
@@ -36,7 +28,7 @@ struct HomeView: View {
 			}
 			.navigationTitle("Home")
 			.toolbar {
-				ToolbarItem(placement: .navigationBarTrailing) {
+				ToolbarItem(placement: .topBarTrailing) {
 					Button("Add Entry") {
 						path.append(CCDestinations.add)
 					}

@@ -9,14 +9,19 @@ import WidgetKit
 import SwiftUI
 
 struct Provider: TimelineProvider {
+	// Get all log entries from Swift Data
 	@MainActor
 	private func getLogEntries() -> [LogEntry] {
+		// The return value
 		var activities: [LogEntry] = []
+		// Sort activities by name
 		var activitiesDescriptor = FetchDescriptor<LogEntry>(sortBy: [SortDescriptor(\LogEntry.date)])
+		// If container creation fails, return
 		guard let moc = try? ModelContainer(for: LogEntry.self) else {
 			return activities
 		}
 		do {
+			// load entries from Swift Data
 			activities = try moc.mainContext.fetch(activitiesDescriptor)
 		} catch {
 			print(error)
@@ -31,12 +36,12 @@ struct Provider: TimelineProvider {
 	}
 @MainActor
 	func getSnapshot(in context: Context, completion: @escaping (CCWEntry) -> ()) {
-
 		let entry = Entry(date: .now, activities: self.getLogEntries())
 		completion(entry)
 	}
 @MainActor
 	func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
+		// Entries for the timeline
 		var entries: [CCWEntry] = []
 
 		// Generate a timeline consisting of five entries an hour apart, starting from the current date.
@@ -82,6 +87,6 @@ struct CCWidget: Widget {
 			}
 		}
 		.configurationDisplayName("Compass Companion Widget")
-		.description("This is an example widget.")
+		.description("This shows the last activity logged")
 	}
 }
